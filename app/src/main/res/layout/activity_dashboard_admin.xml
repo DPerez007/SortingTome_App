@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back01"
+    tools:context=".DashboardAdminActivity">
+
+
+    <!--ToolBar-->
+
+    <RelativeLayout
+        android:id="@+id/toolbarRl"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@drawable/shape_button01">
+
+        <TextView
+            android:id="@+id/titleTv"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:text="Dashboard Admin"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/subTitleTv"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            android:text="abc@example.com"
+            android:layout_below="@id/titleTv"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+        <ImageButton
+            android:id="@+id/loginBtn"
+            android:layout_width="48dp"
+            android:layout_height="78dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_logout_white"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="loginbtn" />
+
+
+    </RelativeLayout>
+    <!--search-->
+
+    <EditText
+        android:id="@+id/searchEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/white"
+        android:layout_below="@id/toolbarRl"
+        android:padding="10dp"
+        android:hint="Search"
+        android:textColorHint="@color/gray02"
+        android:drawableStart="@drawable/ic_search_gray"
+        android:drawablePadding="10dp"
+        android:textColor="@color/black"/>
+
+    <!--categories-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/categoriesRv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/searchEt"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/row_category" />
+
+    <Button
+        android:id="@+id/addCategoryBtn"
+        android:layout_width="750dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="690dp"
+        android:layout_weight="1"
+        android:background="@drawable/shape_button01"
+        android:minHeight="50dp"
+        android:text="+ Add Category"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+
+
+
+    <!--Add PDF-->
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addPdfFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_pdf_add_white"
+        app:tint="@color/white"
+        app:fabCustomSize="45dp"
+        android:layout_marginTop="690dp"
+
+        android:contentDescription ="addPdf"
+        app:backgroundTint="@color/purple_500"/>
+
+
+
+
+</RelativeLayout >

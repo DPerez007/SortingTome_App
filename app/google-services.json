@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "887697562727",
+    "project_id": "sortingtomeapp",
+    "storage_bucket": "sortingtomeapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:887697562727:android:9521e5105ca633d82cc8c2",
+        "android_client_info": {
+          "package_name": "com.example.sortingtome_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "887697562727-7fkft3h9uogkv0r3o10i38c8mlir7gsa.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sortingtome_app",
+            "certificate_hash": "663c0b5ab848c66f5497ee82ed88de8a53d5fb52"
+          }
+        },
+        {
+          "client_id": "887697562727-1u4m6iotgk6934mn2pa2cjt1cnhtikr8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDsaY3NruGKsX5YXhfmPojPpIIhiyELEcY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "887697562727-1u4m6iotgk6934mn2pa2cjt1cnhtikr8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
